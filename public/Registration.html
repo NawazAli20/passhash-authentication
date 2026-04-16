@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./authentication.js" defer></script>
+    <link rel="stylesheet" href="/design.css">
+</head>
+<body>
+    <h1>User Authentication Page</h1>
+    <h2>-:Registering a user:-</h2>
+    <form action="/register" method="post">
+    <label for="username">User Name:</label>
+    <input type="text" id="username" name="username" placeholder="Enter your user name" required>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" minlength="6" placeholder="Enter your password" required>
+    <label for="status">User Status:</label>
+    <input type="text" id="status" name="status" placeholder="Enter your user status here" required>
+    <p id="result"></p>
+    <button type="submit" id="regButton">Register</button>
+    </form>
+    <h2>-:Authenticating a user:-</h2>
+    <form action="/login" method="post">
+    <label for="username">User Name:</label>
+    <input type="text" id="loginusername" name="username" placeholder="Enter your user name" required>
+    <label for="password">Password:</label>
+    <input type="password" id="loginpassword" name="password" minlength="6" placeholder="Enter your password" required>
+    <p id="loginresult"></p>
+    <button type="submit" id="loginButton">Login</button>
+    </form>
+      <h2>-:Get a user status:-</h2>
+    <form action="/status" method="get">
+    <label for="token">Token:</label>
+    <input type="text" id="token" name="token" size="100" maxlength="100" placeholder="Enter your token" required>
+    <p id="statusresult"></p>
+    <button type="submit" id="statusButton">Get Status</button>
+    </form>
+</body>
+</html>
+

@@ -1,0 +1,49 @@
+/* TODO: Add your styles here */
+:root{
+    --bg-font-family: 'Arial', sans-serif;
+    --bg-font-size: 16px;
+}
+body{
+    background-color: aliceblue;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.hidden{
+    display: block;
+    text-align: center;
+}
+.list{
+    font-family: var(--bg-font-family);
+    font-size: var(--bg-font-size);
+    color: white;
+}
+h1{
+    font-size: 2.5em;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+h2{
+    font-size: 1.3em;
+    background-color: red;
+    color: white;
+    width: 300px;
+}
+div{
+    width: 300px;
+    height: 30px;
+    padding: 20px;
+    border: 10px solid blue;
+    margin-top:100px;
+    background-color: lightcoral;
+
+}
+
+tr,td,th{
+    padding: 5px; 
+    border: 2px solid blue;
+}
+p{
+    font-family: cursive;
+}
